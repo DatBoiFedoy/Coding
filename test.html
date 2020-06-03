@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="inputs">
+	<div id="stylediv">
+<label for="username">Username</label>
+<input type="text" name="username" id="username" placeholder="Username Here">
+<label for="password">Password</label>
+<input type="text" name="password" id="password" placeholder="Password Here"> 
+<input value="Login" type="button" name="submit" onClick="login()" id="button">
+</div>
+
+<div>
+	
+<h1>Welcome,</h1><h1 id="printUsername">Please</h1> &nbsp; <h1 id="printPassword">Sign In.</h1>
+
+</div>
+	<script type="text/javascript">
+		
+		function login(){
+			var username = document.getElementById('username')
+			var password = document.getElementById('password')
+			document.getElementById("printUsername").innerHTML=username.value
+			document.getElementById("printPassword").innerHTML=password.value
+		}
+	</script>
+
+</body>
+</html>
