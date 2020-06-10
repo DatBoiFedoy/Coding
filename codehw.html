@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="input">
+	<input id="num1" type="text" name="num1">
+	<input id="num2" type="text" name="num2">
+	<input id="num3" type="text" name="num3">
+	<input value="Find Greatest Number" type="button" name="submit" onClick="compare()" id="button">
+	</div>
+<script type="text/javascript">
+	
+	function compare(){
+			var num1 = document.getElementById('num1').value
+			var num2 = document.getElementById('num2').value
+			var num3 = document.getElementById('num3').value
+console.log("number 1 " + num1)
+console.log("number 2 " + num2)
+console.log("number 3 " + num3)
+
+
+			if ( num1 > num3 && num1 > num2) { //num1 greatest
+				console.log("Number 1, " + num1 + " is the greatest number")
+			}
+			else if ( num2 > num3 && num2 > num1) { //num2 greatest
+				console.log("Number 2, " + num2 + " is the greatest number")
+			}
+			else if ( num3 > num1 && num3 > num2) { //num3 greatest
+				console.log("Number 3, " + num3 + " is the greatest number") 
+			}
+			else if (num2 == num3 && num2 == num1) { //num 2 equal
+				console.log("All numbers are equal")
+			}
+			else if (num3 == num2 && num3 == num1) { //num 3 equal
+				console.log("All numbers are equal")
+			}
+			else if (num1 == num2 && num1 == num3) { //num 1 equal
+				console.log("All numbers are equal")
+			}
+			else if (num1 == num2 && num1 > num3) { //nums 1 and 2 greatest
+				console.log("Numbers " + num1 + " and " + num2 + "are the greatest numbers" )
+			}
+			else if (num3 == num2 && num3 > num1) { //nums 3 and 2 greatest
+				console.log("Numbers " + num3 + " and " + num2 + "are the greatest numbers" )
+			}
+			else if (num1 == num3 && num1 > num3) { //nums 1 and 3 greatest
+				console.log("Numbers " + num1 + " and " + num2 + "are the greatest numbers" )
+			}
+			else {
+				console.log("An error has occured. ")
+			}
+
+
+		}
+</script>
+</body>
+</html>
